@@ -1,0 +1,11 @@
+.input-container {
+  flex: 1;
+
+  &:not(:last-child) {
+    margin-right: $mr-1;
+  }
+
+  input, textarea {
+    width: 100%;
+  }
+}

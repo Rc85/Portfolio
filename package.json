@@ -1,0 +1,60 @@
+{
+  "name": "portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.26",
+    "@fortawesome/free-brands-svg-icons": "^5.12.0",
+    "@fortawesome/pro-duotone-svg-icons": "^5.12.0",
+    "@fortawesome/pro-light-svg-icons": "^5.12.0",
+    "@fortawesome/pro-regular-svg-icons": "^5.12.0",
+    "@fortawesome/pro-solid-svg-icons": "^5.12.0",
+    "@fortawesome/react-fontawesome": "^0.1.8",
+    "@sendgrid/mail": "^6.4.0",
+    "@sentry/node": "^5.11.0",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.4.0",
+    "@testing-library/user-event": "^7.2.1",
+    "axios": "^0.19.1",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "pg": "^7.17.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.3.0"
+  },
+  "scripts": {
+    "start": "node server",
+    "start:dev": "webpack-dev-server --env.REACT_ENV=development --config ./webpack.dev.config.js --mode development",
+    "build:staging": "webpack --env.REACT_ENV=staging --config ./webpack.staging.config.js",
+    "build:production": "webpack -p --env.REACT_ENV=production --config ./webpack.prod.config.js",
+    "migrate": "node-pg-migrate"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-pg-migrate": "^4.2.1",
+    "node-sass": "^4.13.0",
+    "path": "^0.12.7",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
+  }
+}

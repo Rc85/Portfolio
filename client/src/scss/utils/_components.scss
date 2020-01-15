@@ -1,0 +1,104 @@
+@mixin components {
+  @each $colorName, $color, $text in 
+  ('blue', $blue, white),
+  ('highlight-blue', $highlight-blue, white),
+  ('sky-blue', $sky-blue, white),
+  ('baby-blue', $baby-blue, black),
+  ('dark-blue', $dark-blue, white),
+  ('yellow', $yellow, black),
+  ('light-yellow', $light-yellow, black),
+  ('brown', $brown, white),
+  ('light-grey', $light-grey, black),
+  ('dark-grey', $dark-grey, white),
+  ('med-grey', $med-grey, black),
+  ('light-black', $light-black, white),
+  ('purple', $purple, white),
+  ('green', $green, white),
+  ('light-green', $green, black),
+  ('dark-green', $green, white),
+  ('orange', $orange, white),
+  ('violet', $violet, black),
+  ('pink', $pink, black),
+  ('lime', $lime, white),
+  ('teal', $teal, white),
+  ('neon-green', $neon-green, white),
+  ('red', $red, white),
+  ('dark-red', $red, white),
+  ('light-red', $red, black),
+  ('black', $black, white),
+  ('white', $white, black) {
+    .badge-#{$colorName} {
+      background-color: $color;
+      color: $text;
+
+      &.outline {
+        border: 1px solid $color;
+        background-color: transparent;
+      }
+    }
+
+    .badge.badge-#{$colorName} {
+      color: $text;
+
+      .badge-text {
+        background-color: $color;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+        padding: 2px 5px;
+        border: 1px solid $color;
+        
+        &.no-counter {
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px;
+        }
+      }
+
+      .badge-counter {
+        border: 1px solid $color;
+        padding: 2px 5px;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+      }
+    }
+
+    .btn-#{$colorName} {
+      background-color: $color;
+      color: $text;
+      -webkit-user-select: none;        
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+
+      &:hover {
+        cursor: pointer;
+        background-color: darken($color, 15%);
+
+        &:disabled {
+          cursor: default;
+          background-color: darken($color, 0%);
+        }
+      }
+    }
+
+    .border-#{$colorName} {
+      border: 1px solid $color !important;
+    }
+
+    .bg-#{$colorName} {
+      background-color: $color !important;
+    }
+
+    .text-#{$colorName} {
+      color: $color !important;
+    }
+
+    .duo-tone-#{$colorName} {
+      .fa-secondary {
+        fill: var(--fa-secondary-color, $color);
+        opacity: 1;
+      }
+    }
+  }
+}
+
+@include components;

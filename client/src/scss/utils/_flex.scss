@@ -1,0 +1,99 @@
+.d-flex {
+  display: flex !important;
+}
+
+.d-flex-between {
+  display: flex !important;
+  justify-content: space-between !important;
+}
+
+.d-flex-between-start {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: flex-start !important;
+}
+
+.d-flex-between-center {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+}
+
+.d-flex-between-end {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: flex-end !important;
+}
+
+.d-flex-center-start {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: flex-start !important;
+}
+
+.d-flex-around {
+  display: flex !important;
+  justify-content: space-around !important;
+}
+
+.d-flex-around-start {
+  display: flex !important;
+  justify-content: space-around !important;
+  align-items: flex-start !important;
+}
+
+.d-flex-around-center {
+  display: flex !important;
+  justify-content: space-around !important;
+  align-items: center !important;
+}
+
+.d-flex-center-center {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.d-flex-end-start {
+  display: flex !important;
+  justify-content: flex-end !important;
+  align-items: flex-start !important;
+}
+
+.d-flex-end-center {
+  display: flex !important;
+  justify-content: flex-end !important;
+  align-items: center !important;
+}
+
+.d-flex-center {
+  display: flex !important;
+  align-items: center !important;
+}
+
+.d-flex-end {
+  display: flex !important;
+  align-items: flex-end !important;
+}
+
+.d-flex-start {
+  display: flex !important;
+  align-items: flex-start !important;
+}
+
+.d-flex-center-stretch {
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.d-flex-center-col {
+  display: flex !important;
+  align-items: center !important;
+  flex-direction: column !important;
+}
+
+.d-flex-end-end {
+  display: flex !important;
+  justify-content: flex-end !important;
+  align-items: flex-end !important;
+}

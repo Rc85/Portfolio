@@ -1,0 +1,17 @@
+@media only screen and (max-width: 1024px) {
+  .nav-link {
+    min-width: 15%;
+  }
+  
+  .content {
+    width: 90%;
+  }
+
+  .main-title {
+    height: calc(20vh - 75px);
+  }
+
+  .container {
+    margin-top: calc(20vh - 75px);
+  }
+}

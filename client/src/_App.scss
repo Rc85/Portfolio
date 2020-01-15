@@ -1,0 +1,112 @@
+@import 'scss/utils/flex';
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: $font;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $header-font;
+}
+
+h1 {
+  font-size: 2.2rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+h4 {
+  font-size: 1.4rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+
+h6 {
+  font-size: 1.1rem;
+}
+
+a {
+  color: $red;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// Containers
+.flex-container {
+  @extend .d-flex;
+}
+
+.flex-between-container {
+  @extend .d-flex-between-start;
+}
+
+// Cards
+.card {
+  box-shadow: 0 0 10px $light-grey;
+  padding: 20px;
+
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+  }
+}
+
+// Grids
+.grid-container {
+  display: grid;
+  grid-column-gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+}
+
+// Buttons
+.btn {
+  border: 0;
+  padding: 8px 15px;
+
+  &:disabled {
+    filter: brightness(80%);
+  }
+}
+
+// Alignments
+.text-center {
+  text-align: center;
+}
+
+// Forms
+label {
+  font-weight: bold;
+}
+
+.form-row {
+  display: flex;
+  margin-bottom: $mr-2;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: flex-end;
+
+  button:not(:last-child) {
+    margin-right: $mr-1;
+  }
+}
+
+input:not([type=radio]):not([type=checkbox]) {
+  padding: 5px 7px;
+}
+
+textarea {
+  resize: none;
+}

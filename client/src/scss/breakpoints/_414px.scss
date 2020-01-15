@@ -1,0 +1,41 @@
+@media only screen and (max-width: 414px) {
+  .main-title {
+    padding: 50px 0;
+
+    h1 {
+      letter-spacing: 0.75rem;
+      margin-right: -0.75rem;
+    }
+
+    h3 {
+      letter-spacing: 0.25rem;
+      margin-right: -0.25rem;
+    }
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  .logo-container {
+    border-right: 0;
+  }
+
+  .mobile-nav-container {
+    display: flex;
+  }
+
+  .mobile-nav-menu {
+    &.show {
+      transform: scaleX(1);
+    }
+  }
+
+  .nav-link {
+    display: none;
+  }
+}

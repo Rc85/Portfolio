@@ -1,0 +1,59 @@
+@mixin margins-paddings {
+  $value: null;
+  @for $i from 0 through 5 {
+    @if $i == 0 {
+        $value: 0;
+    } @else if $i == 1 {
+        $value: 5px;
+    } @else if $i == 2 {
+        $value: 15px;
+    } @else if $i == 3 {
+        $value: 30px;
+    } @else if $i == 4 {
+        $value: 45px;
+    } @else if $i == 5 {
+        $value: 60px;
+    }
+
+    @each $property in 'm', 'p' {
+      $prop: null;
+      @if $property == 'm' {
+        $prop: margin;
+      } @else if $property == 'p' {
+        $prop: padding;
+      }
+
+      .#{$property}-#{$i} {
+        #{$prop}: $value !important;
+      }
+
+      .#{$property}t-#{$i} {
+        #{$prop}-top: $value !important;
+      }
+
+      .#{$property}r-#{$i} {
+        #{$prop}-right: $value !important;
+      }
+
+      .#{$property}b-#{$i} {
+        #{$prop}-bottom: $value !important;
+      }
+
+      .#{$property}l-#{$i} {
+        #{$prop}-left: $value !important;
+      }
+
+      .#{$property}x-auto {
+        #{$prop}-left: auto !important;
+        #{$prop}-right: auto !important;
+      }
+
+      .#{$property}y-auto {
+        #{$prop}-top: auto !important;
+        #{$prop}-bottom: auto !important;
+      }
+    }
+  }
+}
+
+@include margins-paddings;

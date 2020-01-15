@@ -1,0 +1,13 @@
+@mixin widths-list {
+    @for $i from 0 through 100 {
+        .w-#{$i} {
+            width: percentage($i / 100) !important;
+        }
+
+        .h-#{$i} {
+            height: percentage($i / 100) !important;
+        }
+    }
+}
+
+@include widths-list;

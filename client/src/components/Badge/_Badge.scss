@@ -1,0 +1,26 @@
+.badge {
+  border-radius: 3px;
+  padding: 2px 5px;
+  font-size: 0.70rem;
+  font-weight: bold;
+
+  &:not(:last-child) {
+      margin-right: $mr-1;
+  }
+
+  &.badge-xl {
+      font-size: 1.5rem;
+  }
+
+  &.badge-lg {
+      font-size: 1.25rem;
+  }
+
+  &.badge-md {
+      font-size: 1rem;
+  }
+
+  &.badge-sm {
+    font-size: 0.85rem;
+  }
+}

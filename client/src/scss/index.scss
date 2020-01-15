@@ -1,0 +1,42 @@
+@import 'variables';
+@import 'utils/flex';
+@import 'utils/margins-paddings';
+@import 'utils/components';
+@import 'utils/widths';
+
+@font-face {
+  src: url('/fonts/Oswald-Regular.ttf');
+  font-family: $theme-font;
+}
+
+@font-face {
+  src: url('/fonts/Nunito-Regular.ttf');
+  font-family: $font;
+}
+
+@font-face {
+  src: url('/fonts/Poppins-Regular.ttf');
+  font-family: $header-font;
+}
+
+@import '../App';
+@import '../pages/Main/Main';
+@import '../pages/Projects/Projects';
+
+@import '../components/Alert/Alert';
+@import '../components/Badge/Badge';
+@import '../components/Footer/Footer';
+@import '../components/InputField/InputField';
+@import '../components/TopBar/TopBar';
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+@import './breakpoints/2560px';
+@import './breakpoints/1920px';
+@import './breakpoints/1366px';
+@import './breakpoints/1024px';
+@import './breakpoints/768px';
+@import './breakpoints/414px';
+@import './breakpoints/320px';
