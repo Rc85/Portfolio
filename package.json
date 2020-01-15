@@ -31,7 +31,7 @@
     "build:staging": "webpack --env.REACT_ENV=staging --config ./webpack.staging.config.js",
     "build": "webpack -p --env.REACT_ENV=production --config ./webpack.prod.config.js",
     "migrate": "node-pg-migrate",
-    "heroku-prebuild": "set -e / npm config set '@fortawesome:registry' 'https://npm.fontawesome.com/' / npm config set '//npm.fontawesome.com/:_authToken' '$FONT_AWESOME_AUTH_TOKEN'"
+    "heroku-prebuild": "npm config set '@fortawesome:registry' 'https://npm.fontawesome.com/' && npm config set '//npm.fontawesome.com/:_authToken' '$FONT_AWESOME_AUTH_TOKEN'"
   },
   "eslintConfig": {
     "extends": "react-app"
