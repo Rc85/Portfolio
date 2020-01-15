@@ -30,8 +30,7 @@
     "start:dev": "webpack-dev-server --env.REACT_ENV=development --config ./webpack.dev.config.js --mode development",
     "build:staging": "webpack --env.REACT_ENV=staging --config ./webpack.staging.config.js",
     "build": "webpack -p --env.REACT_ENV=production --config ./webpack.prod.config.js",
-    "migrate": "node-pg-migrate",
-    "heroku-postinstall": "./heroku_install"
+    "migrate": "node-pg-migrate"
   },
   "eslintConfig": {
     "extends": "react-app"
