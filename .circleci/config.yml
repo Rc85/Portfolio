@@ -53,6 +53,7 @@ jobs:
             mkdir /tmp/artifacts;
             mkdir /tmp/artifacts/client;
             cp -r /home/circleci/repo/client/dist /tmp/artifacts/client;
+            cp -r /home/circleci/repo/client/assets /tmp/artifacts/client;
             cp -r /home/circleci/repo/shared /tmp/artifacts;
             cp -r /home/circleci/repo/server /tmp/artifacts;
             cp /home/circleci/repo/package.json /tmp/artifacts/package.json;
