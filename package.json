@@ -29,7 +29,7 @@
     "start": "node server",
     "start:dev": "webpack-dev-server --env.REACT_ENV=development --config ./webpack.dev.config.js --mode development",
     "build:staging": "webpack --env.REACT_ENV=staging --config ./webpack.staging.config.js",
-    "build": "webpack -p --env.REACT_ENV=production --config ./webpack.prod.config.js",
+    "build:production": "webpack -p --env.REACT_ENV=production --config ./webpack.prod.config.js",
     "migrate": "node-pg-migrate",
     "heroku-prebuild": "echo \"@fortawesome:registry=https://npm.fontawesome.com/\" >> .npmrc; echo \"//npm.fontawesome.com/:_authToken=$FONT_AWESOME_AUTH_TOKEN\" >> .npmrc"
   },
